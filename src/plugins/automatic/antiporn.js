@@ -1,5 +1,5 @@
 const nsfwjs = require('nsfwjs')
-const tf = require('@tensorflow/tfjs')
+const tf = require('@tensorflow/tfjs-node')
 import fs from 'fs'
 import path from 'path'
 import os from 'os'
@@ -28,20 +28,22 @@ export default {
                         })
                         .on('end', resolve)
                         .on('error', reject)
-                });
+                })
                 buffer = fs.readFileSync(tmpImage)
                 fs.unlinkSync(tmpVideo)
                 fs.unlinkSync(tmpImage)
             }
+            
             const model = await nsfwjs.load()
             const imgTensor = tf.node.decodeImage(buffer, 3)
             const predictions = await model.classify(imgTensor)
             imgTensor.dispose()
+            
             if (predictions.some(p => ['Porn', 'Hentai'].includes(p.className) && p.probability > 0.5)) {
                 await sock.sendMessage(m.from, { text: 'Contenido NSFW detectado y eliminado.' })
                 await sock.sendMessage(m.from, {
                     delete: { remoteJid: m.from, fromMe: false, id: m.id, participant: m.sender }
-                });
+                })
             }
         } catch (error) {
             console.error('Error en detector NSFW:', error)
