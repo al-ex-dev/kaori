@@ -15,8 +15,7 @@
   "keywords": [
     "ziooo",
     "whatsapp",
-    "bot",
-    "wa"
+    "bot"
   ],
   "author": "Alessandro",
   "license": "ISC",
@@ -27,6 +26,7 @@
   "dependencies": {
     "@adiwajshing/keyed-db": "^0.2.4",
     "@nazi-team/baileys": "^6.7.13",
+    "@tensorflow/tfjs-node": "^4.22.0",
     "awesome-phonenumber": "^7.4.0",
     "axios": "^1.7.9",
     "axios-cookiejar-support": "^5.0.5",
