@@ -2,8 +2,6 @@ import axios from "axios"
 import { CookieJar, Cookie } from "tough-cookie"
 import { wrapper } from "axios-cookiejar-support"
 
-const { ytmp4 } = require("@hiudyy/ytdl")
-
 export default new class Download {
     constructor() {
         this.jar = new CookieJar()
