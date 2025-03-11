@@ -212,10 +212,7 @@ const start = async () => {
                         if (plugin.isGroup && !m.isGroup) {
                             continue
                         }
-                        await plugin.start.call(plugin, m, args).catch(error => {
-                            sock.sendMessage(m.from, { text: `Error al ejecutar el plugin: ${error}` })
-                            console.error(error)
-                        })
+                        await plugin.start.call(plugin, m, args)
                     }
                 }
             }
