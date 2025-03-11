@@ -1,5 +1,5 @@
 const nsfwjs = require('nsfwjs')
-import * as tf from '@tensorflow/tfjs-node';
+// import * as tf from '@tensorflow/tfjs-node';
 import fs from 'fs';
 import path from 'path';
 import os from 'os';
