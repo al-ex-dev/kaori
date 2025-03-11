@@ -1,6 +1,6 @@
 import jpeg from "jpeg-js"
 
-const tf = require('@tensorflow/tfjs-node')
+const tf = require('@tensorflow/tfjs')
 const nsfw = require('nsfwjs')
 
 let _model
@@ -21,6 +21,8 @@ const convert = async (img) => {
 
 export default {
     start: async (m, { sock, db }) => {
+
+        await nsfw.load()
         if (!db.data.chats[m.from]?.antiporn) return
         if (!['imageMessage'].includes(m.type)) return
         const image = await convert(await m.download())
