@@ -62,6 +62,7 @@ export default {
                         //         "remove"
                         //     )
                         // }
+                        
                     }
                 } catch (error) {
                     console.error('Error en detección NSFW:', error)
