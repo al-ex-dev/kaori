@@ -1,8 +1,5 @@
 const nsfwjs = require('nsfwjs')
-import * as tf from '@tensorflow/tfjs';
-import '@tensorflow/tfjs-backend-wasm';
-
-await tf.setBackend('wasm')
+import * as tf from '@tensorflow/tfjs-node'
 import ffmpeg from 'fluent-ffmpeg'
 import fs from 'fs'
 import os from 'os'
