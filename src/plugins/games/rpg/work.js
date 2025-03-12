@@ -1,23 +1,22 @@
 export default {
     name: 'work',
     description: 'Realiza un trabajo y obtén recursos según tu rol en el RPG de Dr. Stone',
-    comand: ['work'],
     exec: async (m, { sock, db }) => {
         const user = db.data.users[m.sender]?.games.find(g => g.role);
         if (!user)
             return await sock.sendMessage(m.from, { text: "⚠️ Primero elige un rol con `.role`." }, { quoted: m });
-        
+
         const cooldown = 5 * 60 * 1000;
         if (user.lastWork && Date.now() - user.lastWork < cooldown)
             return await sock.sendMessage(m.from, { text: "⏳ Debes esperar antes de trabajar de nuevo." }, { quoted: m });
-        
+
         const jobsByRole = {
             "Científico": [
                 { name: "Destilar ácido sulfúrico", reward: { "Ácido Sulfúrico": 5 } },
-                { name: "Síntesis de antibióticos", reward: { "Monedas": 20 } },
+                { name: "Síntesis de antibióticos", reward: { money: 20 } },
                 { name: "Desarrollar pólvora", reward: { "Salitre": 10, "Carbón": 5 } },
                 { name: "Analizar muestras de roca", reward: { "Cobre": 3, "Estaño": 2 } },
-                { name: "Realizar experimentos", reward: { "Monedas": 15 } }
+                { name: "Realizar experimentos", reward: { money: 15 } }
             ],
             "Artesano": [
                 { name: "Forjar herramientas", reward: { "Hierro": 10 } },
@@ -42,29 +41,39 @@ export default {
             ],
             "Explorador": [
                 { name: "Explorar una cueva", reward: { "Cobre": 6, "Estaño": 4 } },
-                { name: "Cartografiar un territorio", reward: { "Monedas": 10 } },
+                { name: "Cartografiar un territorio", reward: { money: 10 } },
                 { name: "Buscar civilizaciones antiguas", reward: { "Artefactos": 3, "Oro": 5 } },
-                { name: "Descubrir ruinas olvidadas", reward: { "Artefactos": 4, "Monedas": 8 } },
-                { name: "Investigar fuentes termales", reward: { "Monedas": 12 } }
+                { name: "Descubrir ruinas olvidadas", reward: { "Artefactos": 4, money: 8 } },
+                { name: "Investigar fuentes termales", reward: { money: 12 } }
             ]
         };
-        
+
         const jobs = jobsByRole[user.role] || [];
         if (!jobs.length)
             return await sock.sendMessage(m.from, { text: "❌ Tu rol no tiene trabajos asignados aún." }, { quoted: m });
-        
+
         const job = jobs[Math.floor(Math.random() * jobs.length)];
         user.lastWork = Date.now();
-        user.resources = user.resources || {};
-        for (const [item, amount] of Object.entries(job.reward))
-            user.resources[item] = (user.resources[item] || 0) + amount;
-        
+
+        user.money = user.money || 0
+        user.resources = user.resources || {}
+
+        let moneyEarned = 0
+        for (const [item, amount] of Object.entries(job.reward)) {
+            if (item === "money") {
+                user.money += amount
+                moneyEarned += amount
+            } else {
+                user.resources[item] = (user.resources[item] || 0) + amount;
+            }
+        }
+
         const rewardsText = Object.entries(job.reward)
             .map(([item, amount]) => `➜ *${item}:* ${amount}`)
-            .join('\n')
-        
+            .join('\n');
+
         await sock.sendMessage(m.from, { 
-            text: `🔨 Como *${user.role}*, trabajaste en *${job.name}* y obtuviste:\n\n${rewardsText}\n\n📦 Inventario actualizado.`
-        }, { quoted: m })
+            text: `🔨 Como *${user.role}*, trabajaste en *${job.name}* y obtuviste:\n\n${rewardsText}\n\n💰 Dinero actual: *${user.money}*\n📦 Inventario actualizado.`
+        }, { quoted: m });
     }
-}
+};
