@@ -15,7 +15,7 @@ export default {
         if (user?.games?.some(g => g.role)) 
             return await sock.sendMessage(m.from, { text: "🔒 Ya tienes un rol asignado." }, { quoted: m })
 
-        const args = m.text.split(" ").slice(1).join(" ");
+        const args = m.args[0]
         if (roles[args]) {
             user.games.push({ role: args, stats: roles[args] });
             return await sock.sendMessage(m.from, { text: `✅ Rol asignado: *${args}*\n\n🛡️ Fuerza: *${roles[args].fuerza}*\n🧠 Inteligencia: *${roles[args].inteligencia}*\n💪 Resistencia: *${roles[args].resistencia}*\n⚡ Velocidad: *${roles[args].velocidad}*` }, { quoted: m });
