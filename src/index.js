@@ -176,7 +176,7 @@ const start = async () => {
     sock.ev.on('messages.upsert', async ({ messages, type }) => {
         for (let i = 0; i < messages.length; i++) {
             if (type === 'notify' && messages[i].message) {
-                console.log(JSON.stringify(messages[i].message, null, 2))
+                // console.log(JSON.stringify(messages[i].message, null, 2))
                 let m = await _content(sock, messages[i])
                 let v = m?.quoted ? m.quoted : m
                 let lang = db.data.users[m?.sender] ? Lang[db.data.users[m?.sender].language] : Lang[db.data.settings[sock.user.jid]?.language]
