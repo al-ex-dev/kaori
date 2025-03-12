@@ -13,7 +13,7 @@ export default {
         if (user.lastTrain && Date.now() - user.lastTrain < cooldown) 
             return await sock.sendMessage(m.from, { text: "⏳ Debes esperar antes de entrenar de nuevo." }, { quoted: m })
 
-        const args = m.text.split(" ").slice(1).join(" ");
+        const args = m.args[0]
         if (stats.includes(args)) {
             const increase = Math.floor(Math.random() * 3) + 1
             user.stats[args] += increase
