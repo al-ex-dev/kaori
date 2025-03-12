@@ -12,7 +12,7 @@ export default {
         }
 
         const user = db.data.users[m.sender].games ||= [] 
-        if (user.games?.some(g => g.role)) 
+        if (user.games.some(g => g.role)) 
             return await sock.sendMessage(m.from, { text: "🔒 Ya tienes un rol asignado." }, { quoted: m })
 
         const args = m.args[0]
