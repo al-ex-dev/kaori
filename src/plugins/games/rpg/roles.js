@@ -22,7 +22,7 @@ export default {
         }
 
         await sock.sendMessage(m.from, {
-            caption: "🌍 *Elige tu rol:*",
+            text: "🌍 *Elige tu rol:*",
             footer: _config.bot.credits,
             interactiveButtons: [{
                 name: "single_select",
