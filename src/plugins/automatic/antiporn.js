@@ -1,25 +1,25 @@
-const nsfw = require('nsfw');
-import * as tf from '@tensorflow/tfjs-node';
-import ffmpeg from 'fluent-ffmpeg';
-import fs from 'fs';
-import os from 'os';
-import path from 'path';
+const nsfwjs = require('nsfw')
+import * as tf from '@tensorflow/tfjs-node'
+import ffmpeg from 'fluent-ffmpeg'
+import fs from 'fs'
+import os from 'os'
+import path from 'path'
 
 const modelPromise = nsfwjs.load()
 
 export default {
     start: async (m, { sock, db }) => {
-        if (!db.data.chats[m.from]?.antiporn) return;
-        const model = await modelPromise;
-        let buffer;
+        if (!db.data.chats[m.from]?.antiporn) return
+        const model = await modelPromise
+        let buffer
 
         if (m.type === 'imageMessage' || m.type === 'stickerMessage') {
             buffer = await m.download();
         } else if (m.type === 'videoMessage') {
-            buffer = await m.download();
-            const videoPath = path.join(os.tmpdir(), `vid-${Date.now()}.mp4`);
+            buffer = await m.download()
+            const videoPath = path.join(os.tmpdir(), `vid-${Date.now()}.mp4`)
             fs.writeFileSync(videoPath, buffer);
-            const framePath = path.join(os.tmpdir(), `frame-${Date.now()}.jpg`);
+            const framePath = path.join(os.tmpdir(), `frame-${Date.now()}.jpg`)
             await new Promise((res, rej) => {
                 ffmpeg(videoPath)
                     .screenshots({
