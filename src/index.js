@@ -181,7 +181,7 @@ const start = async () => {
                 let lang = db.data.users[m?.sender] ? Lang[db.data.users[m?.sender].language] : Lang[db.data.settings[sock.user.jid]?.language]
                 let args = { sock, db, v, lang, delay, Func, Scrap }
 
-                // console.log(JSON.stringify(m.message, null, 2))
+                console.log(JSON.stringify(m.message, null, 2))
 
                 for (const plugin of global.plugins) {
                     const isCommand = !plugin.disable && plugin.comand ? (Array.isArray(plugin.comand) ? plugin.comand.includes(m.command) : plugin.comand.test(m.body)) : undefined
