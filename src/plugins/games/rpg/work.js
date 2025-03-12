@@ -1,6 +1,7 @@
 export default {
     name: 'work',
     description: 'Realiza un trabajo y obtén recursos según tu rol en el RPG de Dr. Stone',
+    comand: ["work"],
     exec: async (m, { sock, db }) => {
         const user = db.data.users[m.sender]?.games.find(g => g.role);
         if (!user)
