@@ -1,4 +1,4 @@
-const nsfwjs = require('nsfw')
+const nsfwjs = require('nsfwjs')
 import * as tf from '@tensorflow/tfjs';
 import '@tensorflow/tfjs-backend-wasm';
 
