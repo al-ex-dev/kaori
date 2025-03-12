@@ -5,7 +5,7 @@ export default {
     comand: ['antilink'],
     exec: async (m, { sock, db }) => {
         if (m.args[0] === 'on') {
-            if (db.data.chats[m.from].antilink.status) return m.reply('➤ Comando: antilink ⧉ Estado: ya está habilitado.')
+            if (db.data.chats[m.from].antilink) return m.reply('➤ Comando: antilink ⧉ Estado: ya está habilitado.')
                 db.data.chats[m.from].antilink = true
             await m.reply('➤ Comando: antilink ⧉ Estado: habilitado.')
         } else if (m.args[0] === 'off') {
