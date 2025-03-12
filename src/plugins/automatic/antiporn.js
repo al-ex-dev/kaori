@@ -1,4 +1,4 @@
-import * as nsfwjs from 'nsfwjs';
+const nsfw = require('nsfw');
 import * as tf from '@tensorflow/tfjs-node';
 import ffmpeg from 'fluent-ffmpeg';
 import fs from 'fs';
