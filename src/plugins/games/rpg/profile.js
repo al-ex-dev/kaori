@@ -19,8 +19,8 @@ export default {
             `⚔️ *Fuerza*: ${attributes.fuerza}\n` +
             `🧠 *Inteligencia*: ${attributes.inteligencia}\n` +
             `🛡 *Resistencia*: ${attributes.resistencia}\n` +
-            `🏃 *Agilidad*: ${attributes.agilidad}\n` +
-            `🍀 *Suerte*: ${attributes.suerte}\n\n` +
+            `🏃 *Resistencia*: ${attributes.resistencia}\n` +
+            `🍀 *Velocidad*: ${attributes.velocidad}\n\n` +
             `📦 *Inventario*:\n${resources}`;
 
         await sock.sendMessage(m.from, {
