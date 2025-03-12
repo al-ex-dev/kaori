@@ -1,6 +1,5 @@
 export default {
     name: 'antilink',
-    params: ['on/off'],
     description: 'Habilitar o deshabilitar antilink',
     comand: ['antilink'],
     exec: async (m, { sock, db }) => {
