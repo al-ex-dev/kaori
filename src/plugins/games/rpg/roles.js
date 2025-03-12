@@ -12,10 +12,11 @@ export default {
         }
 
         const user = db.data.users[m.sender].games ||= [] 
-        if (user.games.some(g => g.role)) 
+        if (user.games?.some(g => g.role)) 
             return await sock.sendMessage(m.from, { text: "🔒 Ya tienes un rol asignado." }, { quoted: m })
 
         const args = m.args[0]
+        m.reply(args)
         if (roles[args]) {
             db.data.users[m.sender].games.push({ role: args, stats: roles[args] })
             return await sock.sendMessage(m.from, { text: `✅ Rol asignado: *${args}*\n\n🛡️ Fuerza: *${roles[args].fuerza}*\n🧠 Inteligencia: *${roles[args].inteligencia}*\n💪 Resistencia: *${roles[args].resistencia}*\n⚡ Velocidad: *${roles[args].velocidad}*` }, { quoted: m });
