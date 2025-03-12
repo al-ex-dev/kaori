@@ -11,7 +11,7 @@ export default {
             "Médico": { fuerza: 3, inteligencia: 9, resistencia: 5, velocidad: 6 }
         }
 
-        const user = db.data.users[m.sender] ||= { games: [] }
+        const user = db.data.users[m.sender].games ||= [] 
         if (user?.games?.some(g => g.role)) 
             return await sock.sendMessage(m.from, { text: "🔒 Ya tienes un rol asignado." }, { quoted: m })
 
