@@ -1,49 +1,72 @@
 const nsfwjs = require('nsfwjs')
-import * as tf from '@tensorflow/tfjs-node'
-import ffmpeg from 'fluent-ffmpeg'
-import fs from 'fs'
-import os from 'os'
-import path from 'path'
+const tf = require('@tensorflow/tfjs-node')
 
-const modelPromise = nsfwjs.load()
+// Variable para almacenar el modelo cargado
+let model
 
 export default {
     start: async (m, { sock, db }) => {
-        if (!db.data.chats[m.from]?.antiporn) return
-        const model = await modelPromise
-        let buffer
+        if (db.data.chats[m.from]?.antiporn) {
+            const supportedTypes = ['imageMessage', 'videoMessage', 'stickerMessage']
+            
+            if (supportedTypes.includes(m.type)) {
+                try {
+                    // Cargar el modelo solo una vez
+                    if (!model) {
+                        model = await nsfwjs.load()
+                    }
+                    
+                    // Obtener el contenido multimedia
+                    let buffer
+                    if (m.type === 'videoMessage') {
+                        // Usar el thumbnail del video
+                        buffer = m.message?.videoMessage?.jpegThumbnail
+                        if (!buffer) return
+                    } else {
+                        buffer = await m.download()
+                    }
 
-        if (m.type === 'imageMessage' || m.type === 'stickerMessage') {
-            buffer = await m.download();
-        } else if (m.type === 'videoMessage') {
-            buffer = await m.download()
-            const videoPath = path.join(os.tmpdir(), `vid-${Date.now()}.mp4`)
-            fs.writeFileSync(videoPath, buffer);
-            const framePath = path.join(os.tmpdir(), `frame-${Date.now()}.jpg`)
-            await new Promise((res, rej) => {
-                ffmpeg(videoPath)
-                    .screenshots({
-                        timestamps: ['50%'],
-                        filename: path.basename(framePath),
-                        folder: os.tmpdir(),
-                        size: '320x240'
-                    })
-                    .on('end', res)
-                    .on('error', rej);
-            });
-            buffer = fs.readFileSync(framePath)
-            fs.unlinkSync(videoPath)
-            fs.unlinkSync(framePath)
-        } else return
+                    // Convertir a tensor
+                    const image = await tf.node.decodeImage(buffer, 3)
+                    
+                    // Clasificar contenido
+                    const predictions = await model.classify(image)
+                    image.dispose() // Liberar memoria
 
-        if (!buffer) return
-        const image = tf.node.decodeImage(buffer, 3)
-        const predictions = await model.classify(image)
-        image.dispose()
+                    // Umbral de detección (ajustable)
+                    const nsfwThreshold = 0.75
+                    const nsfwDetected = predictions.some(p => 
+                        ['Porn', 'Hentai'].includes(p.className) && 
+                        p.probability >= nsfwThreshold
+                    )
 
-        if (predictions.some(p => ['Porn', 'Hentai', 'Sexy'].includes(p.className) && p.probability > 0.6)) {
-            await sock.sendMessage(m.from, { text: 'Contenido NSFW detectado y eliminado.' });
-            await sock.sendMessage(m.from, { delete: { remoteJid: m.from, fromMe: false, id: m.id, participant: m.sender }})
+                    if (nsfwDetected) {
+                        await sock.sendMessage(m.from, { 
+                            text: '🚨 Contenido NSFW detectado y eliminado'
+                        })
+                        
+                        await sock.sendMessage(m.from, { 
+                            delete: { 
+                                remoteJid: m.from, 
+                                fromMe: false, 
+                                id: m.id, 
+                                participant: m.sender 
+                            } 
+                        })
+                        
+                        // Opcional: Eliminar al usuario del grupo
+                        // if (m.isGroup) {
+                        //     await sock.groupParticipantsUpdate(
+                        //         m.from, 
+                        //         [m.sender], 
+                        //         "remove"
+                        //     )
+                        // }
+                    }
+                } catch (error) {
+                    console.error('Error en detección NSFW:', error)
+                }
+            }
         }
     }
-};
+}
