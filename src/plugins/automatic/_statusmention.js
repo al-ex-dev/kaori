@@ -1,8 +1,8 @@
 export default {
-    start: async (m, { sock, db } ) => {
+    strt: async (m, { sock, db } ) => {
         if (m.isGroup) {
             const stats = m.message?.groupStatusMentionMessage
-            if (!stats && m.isBotAdmin) return
+            if (stats && m.isBotAdmin) return
             
             await sock.sendMessage(m.from, {
                 text: `Mensaje interactivo detectado, @${m.sender.split("@")[0]} serás eliminado automáticamente. `,
