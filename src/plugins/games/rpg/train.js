@@ -1,7 +1,7 @@
 export default {
     name: 'train',
     description: 'Entrena tus habilidades',
-    command: ['train'],
+    comand: ['train'],
     exec: async (m, { sock, db }) => {
         const stats = ["fuerza", "inteligencia", "resistencia", "velocidad"];
         const user = db.data.users[m.sender]?.games.find(g => g.role);

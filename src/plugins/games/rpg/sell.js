@@ -1,7 +1,7 @@
 export default {
     name: 'rpgsell',
     description: 'Vende los recursos obtenidos en trabajos y gana monedas.',
-    command: ['sell'],
+    comand: ['sell'],
     exec: async (m, { sock, db, args }) => {
         const user = db.data.users[m.sender]?.games.find(g => g.role);
         if (!user)
@@ -34,4 +34,4 @@ export default {
             text: `💰 Vendiste *${amount}x ${item}* por *${earnings} monedas*.\n📦 Inventario actualizado.\n💵 Saldo actual: *${user.money} monedas*.` 
         }, { quoted: m });
     }
-};
+}

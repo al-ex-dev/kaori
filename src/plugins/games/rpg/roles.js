@@ -1,7 +1,7 @@
 export default {
     name: 'role',
     description: 'Elige tu rol en el RPG de Dr. Stone',
-    command: ['role'],
+    comand: ['role'],
     exec: async (m, { sock, db }) => {
         const roles = {
             "Científico": { fuerza: 2, inteligencia: 10, resistencia: 4, velocidad: 3 },

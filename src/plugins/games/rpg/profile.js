@@ -1,7 +1,7 @@
 export default {
     name: 'profile',
     description: 'Muestra el perfil y atributos del jugador en el RPG.',
-    command: ['profile'],
+    comand: ['profile'],
     exec: async (m, { sock, db }) => {
         const user = db.data.users[m.sender]?.games.find(g => g.role);
         if (!user)
