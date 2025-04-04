@@ -1,4 +1,6 @@
 export default {
+    name: 'antidelete',
+    isGroup: true,
     start: async (m, { sock, db } ) => {
         if (db.data.chats[m.from]?.antidelete) {
             db.data.chats[m.from].cache ||= []

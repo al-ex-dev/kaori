@@ -1,4 +1,6 @@
 export default {
+    name: 'antitoxic',
+    isGroup: true,
     start: async (m, { sock, db }) => {
         if (db.data.chats[m.from]?.antitoxic) {
             let { data: prmpt } = await axios.get("https://raw.githubusercontent.com/al-e-dev/prompt/refs/heads/main/detect.js");

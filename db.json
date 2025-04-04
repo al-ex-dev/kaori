@@ -1,0 +1,1652 @@
+{
+  "data": {
+    "users": {
+      "573013116003@s.whatsapp.net": {
+        "name": "Sin Nombre",
+        "number": "573013116003@s.whatsapp.net",
+        "language": "es",
+        "timezone": "America/Bogota",
+        "country": "CO",
+        "premium": {
+          "level": 0,
+          "time": 0
+        },
+        "registered": false,
+        "blacklist": false,
+        "count": 21,
+        "level": 1,
+        "koins": 1000,
+        "requests": 50,
+        "warnings": 0
+      },
+      "51968374620@s.whatsapp.net": {
+        "name": "2 + \"2\" = 22",
+        "number": "51968374620@s.whatsapp.net",
+        "language": "es",
+        "timezone": "America/Lima",
+        "country": "PE",
+        "premium": {
+          "level": 0,
+          "time": 0
+        },
+        "registered": false,
+        "blacklist": false,
+        "count": 58,
+        "level": 1,
+        "koins": 1000,
+        "requests": 50,
+        "warnings": 0
+      },
+      "6287862115557@s.whatsapp.net": {
+        "name": "◈ 𝚆𝚑𝚢𝚞┃ᴠᴛʀ ᴛᴇᴀᴍ‮",
+        "number": "6287862115557@s.whatsapp.net",
+        "language": "en",
+        "country": "ID",
+        "premium": {
+          "level": 0,
+          "time": 0
+        },
+        "registered": false,
+        "blacklist": false,
+        "count": 4,
+        "level": 1,
+        "koins": 1000,
+        "requests": 50,
+        "warnings": 0
+      },
+      "5216131378683@s.whatsapp.net": {
+        "name": "@?!",
+        "number": "5216131378683@s.whatsapp.net",
+        "language": "es",
+        "timezone": "America/Mexico_City",
+        "country": "MX",
+        "premium": {
+          "level": 0,
+          "time": 0
+        },
+        "registered": false,
+        "blacklist": false,
+        "count": 19,
+        "level": 1,
+        "koins": 1000,
+        "requests": 50,
+        "warnings": 0
+      },
+      "6285210477848@s.whatsapp.net": {
+        "name": "X: ‮adnA nakraulegnem",
+        "number": "6285210477848@s.whatsapp.net",
+        "language": "en",
+        "country": "ID",
+        "premium": {
+          "level": 0,
+          "time": 0
+        },
+        "registered": false,
+        "blacklist": false,
+        "count": 3,
+        "level": 1,
+        "koins": 1000,
+        "requests": 50,
+        "warnings": 0
+      },
+      "6285807428724@s.whatsapp.net": {
+        "name": "Danzzz",
+        "number": "6285807428724@s.whatsapp.net",
+        "language": "en",
+        "country": "ID",
+        "premium": {
+          "level": 0,
+          "time": 0
+        },
+        "registered": false,
+        "blacklist": false,
+        "count": 0,
+        "level": 1,
+        "koins": 1000,
+        "requests": 50,
+        "warnings": 0
+      },
+      "5212282202271@s.whatsapp.net": {
+        "name": "Ninguno•.•",
+        "number": "5212282202271@s.whatsapp.net",
+        "language": "es",
+        "timezone": "America/Mexico_City",
+        "country": "MX",
+        "premium": {
+          "level": 0,
+          "time": 0
+        },
+        "registered": false,
+        "blacklist": false,
+        "count": 4,
+        "level": 1,
+        "koins": 1000,
+        "requests": 50,
+        "warnings": 0
+      },
+      "6285794482030@s.whatsapp.net": {
+        "name": "null",
+        "number": "6285794482030@s.whatsapp.net",
+        "language": "en",
+        "country": "ID",
+        "premium": {
+          "level": 0,
+          "time": 0
+        },
+        "registered": false,
+        "blacklist": false,
+        "count": 2,
+        "level": 1,
+        "koins": 1000,
+        "requests": 50,
+        "warnings": 0
+      },
+      "50250691772@s.whatsapp.net": {
+        "name": "F",
+        "number": "50250691772@s.whatsapp.net",
+        "language": "es",
+        "timezone": "America/Guatemala",
+        "country": "GT",
+        "premium": {
+          "level": 0,
+          "time": 0
+        },
+        "registered": false,
+        "blacklist": false,
+        "count": 2,
+        "level": 1,
+        "koins": 1000,
+        "requests": 50,
+        "warnings": 0
+      },
+      "51913251299@s.whatsapp.net": {
+        "name": ".",
+        "number": "51913251299@s.whatsapp.net",
+        "language": "es",
+        "timezone": "America/Lima",
+        "country": "PE",
+        "premium": {
+          "level": 0,
+          "time": 0
+        },
+        "registered": false,
+        "blacklist": false,
+        "count": 21,
+        "level": 1,
+        "koins": 1000,
+        "requests": 50,
+        "warnings": 0
+      },
+      "5212203307169@s.whatsapp.net": {
+        "name": "Gallo Bot",
+        "number": "5212203307169@s.whatsapp.net",
+        "language": "es",
+        "timezone": "America/Mexico_City",
+        "country": "MX",
+        "premium": {
+          "level": 0,
+          "time": 0
+        },
+        "registered": false,
+        "blacklist": false,
+        "count": 113,
+        "level": 1,
+        "koins": 1000,
+        "requests": 50,
+        "warnings": 0
+      },
+      "6285719898124@s.whatsapp.net": {
+        "name": "dycoders.xyz",
+        "number": "6285719898124@s.whatsapp.net",
+        "language": "en",
+        "country": "ID",
+        "premium": {
+          "level": 0,
+          "time": 0
+        },
+        "registered": false,
+        "blacklist": false,
+        "count": 0,
+        "level": 1,
+        "koins": 1000,
+        "requests": 50,
+        "warnings": 0
+      },
+      "5363942941@s.whatsapp.net": {
+        "name": "𝔜𝔬𝔯𝔡𝔞𝔫🚭❌☠️",
+        "number": "5363942941@s.whatsapp.net",
+        "language": "es",
+        "timezone": "America/Havana",
+        "country": "CU",
+        "premium": {
+          "level": 0,
+          "time": 0
+        },
+        "registered": false,
+        "blacklist": false,
+        "count": 9,
+        "level": 1,
+        "koins": 1000,
+        "requests": 50,
+        "warnings": 0
+      },
+      "5215658885685@s.whatsapp.net": {
+        "name": "~(Error 404)",
+        "number": "5215658885685@s.whatsapp.net",
+        "language": "es",
+        "timezone": "America/Mexico_City",
+        "country": "MX",
+        "premium": {
+          "level": 0,
+          "time": 0
+        },
+        "registered": false,
+        "blacklist": false,
+        "count": 3,
+        "level": 1,
+        "koins": 1000,
+        "requests": 50,
+        "warnings": 0
+      },
+      "51913347603@s.whatsapp.net": {
+        "name": "Mihawk 🤑",
+        "number": "51913347603@s.whatsapp.net",
+        "language": "es",
+        "timezone": "America/Lima",
+        "country": "PE",
+        "premium": {
+          "level": 0,
+          "time": 0
+        },
+        "registered": false,
+        "blacklist": false,
+        "count": 9,
+        "level": 1,
+        "koins": 1000,
+        "requests": 50,
+        "warnings": 0
+      },
+      "5363942942@s.whatsapp.net": {
+        "name": "LIORDAN 🔥🥷",
+        "number": "5363942942@s.whatsapp.net",
+        "language": "es",
+        "timezone": "America/Havana",
+        "country": "CU",
+        "premium": {
+          "level": 0,
+          "time": 0
+        },
+        "registered": false,
+        "blacklist": false,
+        "count": 5,
+        "level": 1,
+        "koins": 1000,
+        "requests": 50,
+        "warnings": 0
+      },
+      "5363155383@s.whatsapp.net": {
+        "name": "antoni",
+        "number": "5363155383@s.whatsapp.net",
+        "language": "es",
+        "timezone": "America/Havana",
+        "country": "CU",
+        "premium": {
+          "level": 0,
+          "time": 0
+        },
+        "registered": false,
+        "blacklist": false,
+        "count": 7,
+        "level": 1,
+        "koins": 1000,
+        "requests": 50,
+        "warnings": 0
+      },
+      "50497371321@s.whatsapp.net": {
+        "name": "José c",
+        "number": "50497371321@s.whatsapp.net",
+        "language": "es",
+        "timezone": "America/Tegucigalpa",
+        "country": "HN",
+        "premium": {
+          "level": 0,
+          "time": 0
+        },
+        "registered": false,
+        "blacklist": false,
+        "count": 0,
+        "level": 1,
+        "koins": 1000,
+        "requests": 50,
+        "warnings": 0
+      },
+      "595986353184@s.whatsapp.net": {
+        "name": "⸸ Andrew Parawa prime ⸸",
+        "number": "595986353184@s.whatsapp.net",
+        "language": "es",
+        "timezone": "America/Asuncion",
+        "country": "PY",
+        "premium": {
+          "level": 0,
+          "time": 0
+        },
+        "registered": false,
+        "blacklist": false,
+        "count": 8,
+        "level": 1,
+        "koins": 1000,
+        "requests": 50,
+        "warnings": 0
+      },
+      "6282173230348@s.whatsapp.net": {
+        "name": "exsagiie",
+        "number": "6282173230348@s.whatsapp.net",
+        "language": "en",
+        "country": "ID",
+        "premium": {
+          "level": 0,
+          "time": 0
+        },
+        "registered": false,
+        "blacklist": false,
+        "count": 5,
+        "level": 1,
+        "koins": 1000,
+        "requests": 50,
+        "warnings": 0
+      },
+      "51966352241@s.whatsapp.net": {
+        "name": "🫂",
+        "number": "51966352241@s.whatsapp.net",
+        "language": "es",
+        "timezone": "America/Lima",
+        "country": "PE",
+        "premium": {
+          "level": 0,
+          "time": 0
+        },
+        "registered": false,
+        "blacklist": false,
+        "count": 0,
+        "level": 1,
+        "koins": 1000,
+        "requests": 50,
+        "warnings": 0
+      },
+      "5493755284892@s.whatsapp.net": {
+        "name": "Yoanᅟ🫩𝂶🫟 ㅤㅤㅤㅤ",
+        "number": "5493755284892@s.whatsapp.net",
+        "language": "es",
+        "timezone": "America/Argentina/Buenos_Aires",
+        "country": "AR",
+        "premium": {
+          "level": 0,
+          "time": 0
+        },
+        "registered": false,
+        "blacklist": false,
+        "count": 15,
+        "level": 1,
+        "koins": 1000,
+        "requests": 50,
+        "warnings": 0
+      },
+      "51912316378@s.whatsapp.net": {
+        "name": ".",
+        "number": "51912316378@s.whatsapp.net",
+        "language": "es",
+        "timezone": "America/Lima",
+        "country": "PE",
+        "premium": {
+          "level": 0,
+          "time": 0
+        },
+        "registered": false,
+        "blacklist": false,
+        "count": 0,
+        "level": 1,
+        "koins": 1000,
+        "requests": 50,
+        "warnings": 0
+      },
+      "6285743733895@s.whatsapp.net": {
+        "name": "Dycokyutt🐣",
+        "number": "6285743733895@s.whatsapp.net",
+        "language": "en",
+        "country": "ID",
+        "premium": {
+          "level": 0,
+          "time": 0
+        },
+        "registered": false,
+        "blacklist": false,
+        "count": 0,
+        "level": 1,
+        "koins": 1000,
+        "requests": 50,
+        "warnings": 0
+      },
+      "5493877451711@s.whatsapp.net": {
+        "name": "Alex",
+        "number": "5493877451711@s.whatsapp.net",
+        "language": "es",
+        "timezone": "America/Argentina/Buenos_Aires",
+        "country": "AR",
+        "premium": {
+          "level": 0,
+          "time": 0
+        },
+        "registered": false,
+        "blacklist": false,
+        "count": 0,
+        "level": 1,
+        "koins": 1000,
+        "requests": 50,
+        "warnings": 0
+      },
+      "573214327301@s.whatsapp.net": {
+        "name": "Winter",
+        "number": "573214327301@s.whatsapp.net",
+        "language": "es",
+        "timezone": "America/Bogota",
+        "country": "CO",
+        "premium": {
+          "level": 0,
+          "time": 0
+        },
+        "registered": false,
+        "blacklist": false,
+        "count": 0,
+        "level": 1,
+        "koins": 1000,
+        "requests": 50,
+        "warnings": 0
+      },
+      "51904455081@s.whatsapp.net": {
+        "name": ":)",
+        "number": "51904455081@s.whatsapp.net",
+        "language": "es",
+        "timezone": "America/Lima",
+        "country": "PE",
+        "premium": {
+          "level": 0,
+          "time": 0
+        },
+        "registered": false,
+        "blacklist": false,
+        "count": 0,
+        "level": 1,
+        "koins": 1000,
+        "requests": 50,
+        "warnings": 0
+      },
+      "5491168352204@s.whatsapp.net": {
+        "name": "𖡬 FG ~",
+        "number": "5491168352204@s.whatsapp.net",
+        "language": "es",
+        "timezone": "America/Argentina/Buenos_Aires",
+        "country": "AR",
+        "premium": {
+          "level": 0,
+          "time": 0
+        },
+        "registered": false,
+        "blacklist": false,
+        "count": 8,
+        "level": 1,
+        "koins": 1000,
+        "requests": 50,
+        "warnings": 0
+      },
+      "51934628431@s.whatsapp.net": {
+        "name": "Kaius",
+        "number": "51934628431@s.whatsapp.net",
+        "language": "es",
+        "timezone": "America/Lima",
+        "country": "PE",
+        "premium": {
+          "level": 0,
+          "time": 0
+        },
+        "registered": false,
+        "blacklist": false,
+        "count": 2,
+        "level": 1,
+        "koins": 1000,
+        "requests": 50,
+        "warnings": 0
+      },
+      "6285135914292@s.whatsapp.net": {
+        "name": "Unicorn X",
+        "number": "6285135914292@s.whatsapp.net",
+        "language": "en",
+        "country": "ID",
+        "premium": {
+          "level": 0,
+          "time": 0
+        },
+        "registered": false,
+        "blacklist": false,
+        "count": 3,
+        "level": 1,
+        "koins": 1000,
+        "requests": 50,
+        "warnings": 0
+      },
+      "51951584542@s.whatsapp.net": {
+        "name": "Kaisel",
+        "number": "51951584542@s.whatsapp.net",
+        "language": "es",
+        "timezone": "America/Lima",
+        "country": "PE",
+        "premium": {
+          "level": 0,
+          "time": 0
+        },
+        "registered": false,
+        "blacklist": false,
+        "count": 5,
+        "level": 1,
+        "koins": 1000,
+        "requests": 50,
+        "warnings": 0
+      },
+      "6283142505054@s.whatsapp.net": {
+        "name": "alisa",
+        "number": "6283142505054@s.whatsapp.net",
+        "language": "en",
+        "country": "ID",
+        "premium": {
+          "level": 0,
+          "time": 0
+        },
+        "registered": false,
+        "blacklist": false,
+        "count": 3,
+        "level": 1,
+        "koins": 1000,
+        "requests": 50,
+        "warnings": 0
+      },
+      "6281351692548@s.whatsapp.net": {
+        "name": "KyuuRzy",
+        "number": "6281351692548@s.whatsapp.net",
+        "language": "en",
+        "country": "ID",
+        "premium": {
+          "level": 0,
+          "time": 0
+        },
+        "registered": false,
+        "blacklist": false,
+        "count": 0,
+        "level": 1,
+        "koins": 1000,
+        "requests": 50,
+        "warnings": 0
+      },
+      "51923828403@s.whatsapp.net": {
+        "name": "~Vargas",
+        "number": "51923828403@s.whatsapp.net",
+        "language": "es",
+        "timezone": "America/Lima",
+        "country": "PE",
+        "premium": {
+          "level": 0,
+          "time": 0
+        },
+        "registered": false,
+        "blacklist": false,
+        "count": 1,
+        "level": 1,
+        "koins": 1000,
+        "requests": 50,
+        "warnings": 0
+      },
+      "2348124146269@s.whatsapp.net": {
+        "name": "GUKU HACK WORLD",
+        "number": "2348124146269@s.whatsapp.net",
+        "language": "en",
+        "country": "NG",
+        "premium": {
+          "level": 0,
+          "time": 0
+        },
+        "registered": false,
+        "blacklist": false,
+        "count": 1,
+        "level": 1,
+        "koins": 1000,
+        "requests": 50,
+        "warnings": 0
+      },
+      "6285751560284@s.whatsapp.net": {
+        "name": "ethereal",
+        "number": "6285751560284@s.whatsapp.net",
+        "language": "en",
+        "country": "ID",
+        "premium": {
+          "level": 0,
+          "time": 0
+        },
+        "registered": false,
+        "blacklist": false,
+        "count": 1,
+        "level": 1,
+        "koins": 1000,
+        "requests": 50,
+        "warnings": 0
+      },
+      "51951292918@s.whatsapp.net": {
+        "name": "JAIRO",
+        "number": "51951292918@s.whatsapp.net",
+        "language": "es",
+        "timezone": "America/Lima",
+        "country": "PE",
+        "premium": {
+          "level": 0,
+          "time": 0
+        },
+        "registered": false,
+        "blacklist": false,
+        "count": 0,
+        "level": 1,
+        "koins": 1000,
+        "requests": 50,
+        "warnings": 0
+      },
+      "51984288993@s.whatsapp.net": {
+        "name": "..",
+        "number": "51984288993@s.whatsapp.net",
+        "language": "es",
+        "timezone": "America/Lima",
+        "country": "PE",
+        "premium": {
+          "level": 0,
+          "time": 0
+        },
+        "registered": false,
+        "blacklist": false,
+        "count": 0,
+        "level": 1,
+        "koins": 1000,
+        "requests": 50,
+        "warnings": 0
+      },
+      "51925557664@s.whatsapp.net": {
+        "name": "Obito Uchiha",
+        "number": "51925557664@s.whatsapp.net",
+        "language": "es",
+        "timezone": "America/Lima",
+        "country": "PE",
+        "premium": {
+          "level": 0,
+          "time": 0
+        },
+        "registered": false,
+        "blacklist": false,
+        "count": 6,
+        "level": 1,
+        "koins": 1000,
+        "requests": 50,
+        "warnings": 0
+      },
+      "51913346164@s.whatsapp.net": {
+        "name": "『JRT 🐦‍⬛』",
+        "number": "51913346164@s.whatsapp.net",
+        "language": "es",
+        "timezone": "America/Lima",
+        "country": "PE",
+        "premium": {
+          "level": 0,
+          "time": 0
+        },
+        "registered": false,
+        "blacklist": false,
+        "count": 2,
+        "level": 1,
+        "koins": 1000,
+        "requests": 50,
+        "warnings": 0
+      }
+    },
+    "chats": {
+      "120363042554843401@g.us": {
+        "name": "🧪El Laboratorio de Senku🧪",
+        "code": "GEnzNNvyq4bIyVQlLck8J3",
+        "mute": false,
+        "notify": {
+          "add": {
+            "status": false,
+            "message": "*¤* Bienvenido a @group!\n\n_@action_\n\n*◈ Time:* @time\n\n@desc"
+          },
+          "bye": {
+            "status": false,
+            "message": "*¤* Adiós @user!\n\n_@action_\n\n*◈ Time:* @time\n\n@desc"
+          },
+          "demote": {
+            "status": false,
+            "message": "*¤* Usuario degradado @user!\n\n_@action_\n\n*◈ Time:* @time\n*◈ Rol:* miembro\n\n@desc"
+          },
+          "promote": {
+            "status": false,
+            "message": "*¤* Usuario promovido @user!\n\n_@action_\n\n*◈ Time:* @time\n*◈ Rol:* administrador\n\n@desc"
+          },
+          "modify": {
+            "status": false,
+            "message": "*¤* Grupo modificado!\n\n_@action_\n\n*◈ Time:* @time\n\n@desc"
+          },
+          "restrict": {
+            "status": false,
+            "message": "*¤* Grupo modificado!\n\n_@action_\n\n*◈ Time:* @time"
+          },
+          "announce": {
+            "status": false,
+            "message": "*¤* Grupo modificado!\n\n_@action_\n\n*◈ Time:* @time"
+          },
+          "memberAddMode": {
+            "status": false,
+            "message": "*¤* Grupo modificado!\n\n_@action_\n\n*◈ Time:* @time"
+          },
+          "joinApprovalMode": {
+            "status": false,
+            "message": "*¤* Grupo modificado!\n\n_@action_\n\n*◈ Time:* @time"
+          },
+          "desc": {
+            "status": false,
+            "message": "*¤* Grupo modificado!\n\n_@action_\n\n*◈ Time:* @time"
+          },
+          "subject": {
+            "status": false,
+            "message": "*¤* Grupo modificado!\n\n_@action_\n\n*◈ Time:* @time"
+          }
+        },
+        "antiporn": false,
+        "antionce": false,
+        "antilink": {
+          "status": false,
+          "platforms": {
+            "youtube": {
+              "status": false,
+              "urls": [
+                "youtube.com",
+                "youtu.be"
+              ]
+            },
+            "facebook": {
+              "status": false,
+              "urls": [
+                "facebook.com",
+                "fb.com",
+                "fb.me"
+              ]
+            },
+            "instagram": {
+              "status": false,
+              "urls": [
+                "instagram.com",
+                "ig.me"
+              ]
+            },
+            "tiktok": {
+              "status": false,
+              "urls": [
+                "tiktok.com",
+                "vm.tiktok.com"
+              ]
+            },
+            "twitter": {
+              "status": false,
+              "urls": [
+                "twitter.com",
+                "t.co",
+                "x.com"
+              ]
+            },
+            "reddit": {
+              "status": false,
+              "urls": [
+                "reddit.com",
+                "redd.it"
+              ]
+            },
+            "pinterest": {
+              "status": false,
+              "urls": [
+                "pinterest.com",
+                "pin.it"
+              ]
+            },
+            "snapchat": {
+              "status": false,
+              "urls": [
+                "snapchat.com",
+                "sc.snapchat.com"
+              ]
+            },
+            "telegram": {
+              "status": false,
+              "urls": [
+                "t.me",
+                "telegram.dog"
+              ]
+            },
+            "whatsapp": {
+              "status": false,
+              "urls": [
+                "whatsapp.com",
+                "wa.me",
+                "wa.link"
+              ]
+            },
+            "discord": {
+              "status": false,
+              "urls": [
+                "discord.com",
+                "discord.gg"
+              ]
+            },
+            "spotify": {
+              "status": false,
+              "urls": [
+                "spotify.com",
+                "spoti.fi"
+              ]
+            }
+          }
+        },
+        "antifake": false,
+        "antitoxic": false,
+        "antidelete": false,
+        "link": [],
+        "fake": [],
+        "cache": [],
+        "games": []
+      },
+      "120363248826862499@g.us": {
+        "name": "◈ ᴠᴇᴛᴇʀᴀɴ ◈",
+        "code": null,
+        "mute": false,
+        "notify": {
+          "add": {
+            "status": false,
+            "message": "*¤* Bienvenido a @group!\n\n_@action_\n\n*◈ Time:* @time\n\n@desc"
+          },
+          "bye": {
+            "status": false,
+            "message": "*¤* Adiós @user!\n\n_@action_\n\n*◈ Time:* @time\n\n@desc"
+          },
+          "demote": {
+            "status": false,
+            "message": "*¤* Usuario degradado @user!\n\n_@action_\n\n*◈ Time:* @time\n*◈ Rol:* miembro\n\n@desc"
+          },
+          "promote": {
+            "status": false,
+            "message": "*¤* Usuario promovido @user!\n\n_@action_\n\n*◈ Time:* @time\n*◈ Rol:* administrador\n\n@desc"
+          },
+          "modify": {
+            "status": false,
+            "message": "*¤* Grupo modificado!\n\n_@action_\n\n*◈ Time:* @time\n\n@desc"
+          },
+          "restrict": {
+            "status": false,
+            "message": "*¤* Grupo modificado!\n\n_@action_\n\n*◈ Time:* @time"
+          },
+          "announce": {
+            "status": false,
+            "message": "*¤* Grupo modificado!\n\n_@action_\n\n*◈ Time:* @time"
+          },
+          "memberAddMode": {
+            "status": false,
+            "message": "*¤* Grupo modificado!\n\n_@action_\n\n*◈ Time:* @time"
+          },
+          "joinApprovalMode": {
+            "status": false,
+            "message": "*¤* Grupo modificado!\n\n_@action_\n\n*◈ Time:* @time"
+          },
+          "desc": {
+            "status": false,
+            "message": "*¤* Grupo modificado!\n\n_@action_\n\n*◈ Time:* @time"
+          },
+          "subject": {
+            "status": false,
+            "message": "*¤* Grupo modificado!\n\n_@action_\n\n*◈ Time:* @time"
+          }
+        },
+        "antiporn": false,
+        "antionce": false,
+        "antilink": {
+          "status": false,
+          "platforms": {
+            "youtube": {
+              "status": false,
+              "urls": [
+                "youtube.com",
+                "youtu.be"
+              ]
+            },
+            "facebook": {
+              "status": false,
+              "urls": [
+                "facebook.com",
+                "fb.com",
+                "fb.me"
+              ]
+            },
+            "instagram": {
+              "status": false,
+              "urls": [
+                "instagram.com",
+                "ig.me"
+              ]
+            },
+            "tiktok": {
+              "status": false,
+              "urls": [
+                "tiktok.com",
+                "vm.tiktok.com"
+              ]
+            },
+            "twitter": {
+              "status": false,
+              "urls": [
+                "twitter.com",
+                "t.co",
+                "x.com"
+              ]
+            },
+            "reddit": {
+              "status": false,
+              "urls": [
+                "reddit.com",
+                "redd.it"
+              ]
+            },
+            "pinterest": {
+              "status": false,
+              "urls": [
+                "pinterest.com",
+                "pin.it"
+              ]
+            },
+            "snapchat": {
+              "status": false,
+              "urls": [
+                "snapchat.com",
+                "sc.snapchat.com"
+              ]
+            },
+            "telegram": {
+              "status": false,
+              "urls": [
+                "t.me",
+                "telegram.dog"
+              ]
+            },
+            "whatsapp": {
+              "status": false,
+              "urls": [
+                "whatsapp.com",
+                "wa.me",
+                "wa.link"
+              ]
+            },
+            "discord": {
+              "status": false,
+              "urls": [
+                "discord.com",
+                "discord.gg"
+              ]
+            },
+            "spotify": {
+              "status": false,
+              "urls": [
+                "spotify.com",
+                "spoti.fi"
+              ]
+            }
+          }
+        },
+        "antifake": false,
+        "antitoxic": false,
+        "antidelete": false,
+        "link": [],
+        "fake": [],
+        "cache": [],
+        "games": []
+      },
+      "120363355134686281@g.us": {
+        "name": "Test",
+        "code": "C50f52lATYe1b9gBuF0sss",
+        "mute": false,
+        "notify": {
+          "add": {
+            "status": false,
+            "message": "*¤* Bienvenido a @group!\n\n_@action_\n\n*◈ Time:* @time\n\n@desc"
+          },
+          "bye": {
+            "status": false,
+            "message": "*¤* Adiós @user!\n\n_@action_\n\n*◈ Time:* @time\n\n@desc"
+          },
+          "demote": {
+            "status": false,
+            "message": "*¤* Usuario degradado @user!\n\n_@action_\n\n*◈ Time:* @time\n*◈ Rol:* miembro\n\n@desc"
+          },
+          "promote": {
+            "status": false,
+            "message": "*¤* Usuario promovido @user!\n\n_@action_\n\n*◈ Time:* @time\n*◈ Rol:* administrador\n\n@desc"
+          },
+          "modify": {
+            "status": false,
+            "message": "*¤* Grupo modificado!\n\n_@action_\n\n*◈ Time:* @time\n\n@desc"
+          },
+          "restrict": {
+            "status": false,
+            "message": "*¤* Grupo modificado!\n\n_@action_\n\n*◈ Time:* @time"
+          },
+          "announce": {
+            "status": false,
+            "message": "*¤* Grupo modificado!\n\n_@action_\n\n*◈ Time:* @time"
+          },
+          "memberAddMode": {
+            "status": false,
+            "message": "*¤* Grupo modificado!\n\n_@action_\n\n*◈ Time:* @time"
+          },
+          "joinApprovalMode": {
+            "status": false,
+            "message": "*¤* Grupo modificado!\n\n_@action_\n\n*◈ Time:* @time"
+          },
+          "desc": {
+            "status": false,
+            "message": "*¤* Grupo modificado!\n\n_@action_\n\n*◈ Time:* @time"
+          },
+          "subject": {
+            "status": false,
+            "message": "*¤* Grupo modificado!\n\n_@action_\n\n*◈ Time:* @time"
+          }
+        },
+        "antiporn": false,
+        "antionce": false,
+        "antilink": {
+          "status": false,
+          "platforms": {
+            "youtube": {
+              "status": false,
+              "urls": [
+                "youtube.com",
+                "youtu.be"
+              ]
+            },
+            "facebook": {
+              "status": false,
+              "urls": [
+                "facebook.com",
+                "fb.com",
+                "fb.me"
+              ]
+            },
+            "instagram": {
+              "status": false,
+              "urls": [
+                "instagram.com",
+                "ig.me"
+              ]
+            },
+            "tiktok": {
+              "status": false,
+              "urls": [
+                "tiktok.com",
+                "vm.tiktok.com"
+              ]
+            },
+            "twitter": {
+              "status": false,
+              "urls": [
+                "twitter.com",
+                "t.co",
+                "x.com"
+              ]
+            },
+            "reddit": {
+              "status": false,
+              "urls": [
+                "reddit.com",
+                "redd.it"
+              ]
+            },
+            "pinterest": {
+              "status": false,
+              "urls": [
+                "pinterest.com",
+                "pin.it"
+              ]
+            },
+            "snapchat": {
+              "status": false,
+              "urls": [
+                "snapchat.com",
+                "sc.snapchat.com"
+              ]
+            },
+            "telegram": {
+              "status": false,
+              "urls": [
+                "t.me",
+                "telegram.dog"
+              ]
+            },
+            "whatsapp": {
+              "status": false,
+              "urls": [
+                "whatsapp.com",
+                "wa.me",
+                "wa.link"
+              ]
+            },
+            "discord": {
+              "status": false,
+              "urls": [
+                "discord.com",
+                "discord.gg"
+              ]
+            },
+            "spotify": {
+              "status": false,
+              "urls": [
+                "spotify.com",
+                "spoti.fi"
+              ]
+            }
+          }
+        },
+        "antifake": false,
+        "antitoxic": false,
+        "antidelete": false,
+        "link": [],
+        "fake": [],
+        "cache": [],
+        "games": []
+      },
+      "120363256776472627@g.us": {
+        "name": "© CuriosityBot “Group”",
+        "code": null,
+        "mute": false,
+        "notify": {
+          "add": {
+            "status": false,
+            "message": "*¤* Bienvenido a @group!\n\n_@action_\n\n*◈ Time:* @time\n\n@desc"
+          },
+          "bye": {
+            "status": false,
+            "message": "*¤* Adiós @user!\n\n_@action_\n\n*◈ Time:* @time\n\n@desc"
+          },
+          "demote": {
+            "status": false,
+            "message": "*¤* Usuario degradado @user!\n\n_@action_\n\n*◈ Time:* @time\n*◈ Rol:* miembro\n\n@desc"
+          },
+          "promote": {
+            "status": false,
+            "message": "*¤* Usuario promovido @user!\n\n_@action_\n\n*◈ Time:* @time\n*◈ Rol:* administrador\n\n@desc"
+          },
+          "modify": {
+            "status": false,
+            "message": "*¤* Grupo modificado!\n\n_@action_\n\n*◈ Time:* @time\n\n@desc"
+          },
+          "restrict": {
+            "status": false,
+            "message": "*¤* Grupo modificado!\n\n_@action_\n\n*◈ Time:* @time"
+          },
+          "announce": {
+            "status": false,
+            "message": "*¤* Grupo modificado!\n\n_@action_\n\n*◈ Time:* @time"
+          },
+          "memberAddMode": {
+            "status": false,
+            "message": "*¤* Grupo modificado!\n\n_@action_\n\n*◈ Time:* @time"
+          },
+          "joinApprovalMode": {
+            "status": false,
+            "message": "*¤* Grupo modificado!\n\n_@action_\n\n*◈ Time:* @time"
+          },
+          "desc": {
+            "status": false,
+            "message": "*¤* Grupo modificado!\n\n_@action_\n\n*◈ Time:* @time"
+          },
+          "subject": {
+            "status": false,
+            "message": "*¤* Grupo modificado!\n\n_@action_\n\n*◈ Time:* @time"
+          }
+        },
+        "antiporn": false,
+        "antionce": false,
+        "antilink": {
+          "status": false,
+          "platforms": {
+            "youtube": {
+              "status": false,
+              "urls": [
+                "youtube.com",
+                "youtu.be"
+              ]
+            },
+            "facebook": {
+              "status": false,
+              "urls": [
+                "facebook.com",
+                "fb.com",
+                "fb.me"
+              ]
+            },
+            "instagram": {
+              "status": false,
+              "urls": [
+                "instagram.com",
+                "ig.me"
+              ]
+            },
+            "tiktok": {
+              "status": false,
+              "urls": [
+                "tiktok.com",
+                "vm.tiktok.com"
+              ]
+            },
+            "twitter": {
+              "status": false,
+              "urls": [
+                "twitter.com",
+                "t.co",
+                "x.com"
+              ]
+            },
+            "reddit": {
+              "status": false,
+              "urls": [
+                "reddit.com",
+                "redd.it"
+              ]
+            },
+            "pinterest": {
+              "status": false,
+              "urls": [
+                "pinterest.com",
+                "pin.it"
+              ]
+            },
+            "snapchat": {
+              "status": false,
+              "urls": [
+                "snapchat.com",
+                "sc.snapchat.com"
+              ]
+            },
+            "telegram": {
+              "status": false,
+              "urls": [
+                "t.me",
+                "telegram.dog"
+              ]
+            },
+            "whatsapp": {
+              "status": false,
+              "urls": [
+                "whatsapp.com",
+                "wa.me",
+                "wa.link"
+              ]
+            },
+            "discord": {
+              "status": false,
+              "urls": [
+                "discord.com",
+                "discord.gg"
+              ]
+            },
+            "spotify": {
+              "status": false,
+              "urls": [
+                "spotify.com",
+                "spoti.fi"
+              ]
+            }
+          }
+        },
+        "antifake": false,
+        "antitoxic": false,
+        "antidelete": false,
+        "link": [],
+        "fake": [],
+        "cache": [],
+        "games": []
+      },
+      "59172945992-1522279021@g.us": {
+        "name": "DyLux - Senna ᴮᴼᵀ ✨",
+        "code": null,
+        "mute": false,
+        "notify": {
+          "add": {
+            "status": false,
+            "message": "*¤* Bienvenido a @group!\n\n_@action_\n\n*◈ Time:* @time\n\n@desc"
+          },
+          "bye": {
+            "status": false,
+            "message": "*¤* Adiós @user!\n\n_@action_\n\n*◈ Time:* @time\n\n@desc"
+          },
+          "demote": {
+            "status": false,
+            "message": "*¤* Usuario degradado @user!\n\n_@action_\n\n*◈ Time:* @time\n*◈ Rol:* miembro\n\n@desc"
+          },
+          "promote": {
+            "status": false,
+            "message": "*¤* Usuario promovido @user!\n\n_@action_\n\n*◈ Time:* @time\n*◈ Rol:* administrador\n\n@desc"
+          },
+          "modify": {
+            "status": false,
+            "message": "*¤* Grupo modificado!\n\n_@action_\n\n*◈ Time:* @time\n\n@desc"
+          },
+          "restrict": {
+            "status": false,
+            "message": "*¤* Grupo modificado!\n\n_@action_\n\n*◈ Time:* @time"
+          },
+          "announce": {
+            "status": false,
+            "message": "*¤* Grupo modificado!\n\n_@action_\n\n*◈ Time:* @time"
+          },
+          "memberAddMode": {
+            "status": false,
+            "message": "*¤* Grupo modificado!\n\n_@action_\n\n*◈ Time:* @time"
+          },
+          "joinApprovalMode": {
+            "status": false,
+            "message": "*¤* Grupo modificado!\n\n_@action_\n\n*◈ Time:* @time"
+          },
+          "desc": {
+            "status": false,
+            "message": "*¤* Grupo modificado!\n\n_@action_\n\n*◈ Time:* @time"
+          },
+          "subject": {
+            "status": false,
+            "message": "*¤* Grupo modificado!\n\n_@action_\n\n*◈ Time:* @time"
+          }
+        },
+        "antiporn": false,
+        "antionce": false,
+        "antilink": {
+          "status": false,
+          "platforms": {
+            "youtube": {
+              "status": false,
+              "urls": [
+                "youtube.com",
+                "youtu.be"
+              ]
+            },
+            "facebook": {
+              "status": false,
+              "urls": [
+                "facebook.com",
+                "fb.com",
+                "fb.me"
+              ]
+            },
+            "instagram": {
+              "status": false,
+              "urls": [
+                "instagram.com",
+                "ig.me"
+              ]
+            },
+            "tiktok": {
+              "status": false,
+              "urls": [
+                "tiktok.com",
+                "vm.tiktok.com"
+              ]
+            },
+            "twitter": {
+              "status": false,
+              "urls": [
+                "twitter.com",
+                "t.co",
+                "x.com"
+              ]
+            },
+            "reddit": {
+              "status": false,
+              "urls": [
+                "reddit.com",
+                "redd.it"
+              ]
+            },
+            "pinterest": {
+              "status": false,
+              "urls": [
+                "pinterest.com",
+                "pin.it"
+              ]
+            },
+            "snapchat": {
+              "status": false,
+              "urls": [
+                "snapchat.com",
+                "sc.snapchat.com"
+              ]
+            },
+            "telegram": {
+              "status": false,
+              "urls": [
+                "t.me",
+                "telegram.dog"
+              ]
+            },
+            "whatsapp": {
+              "status": false,
+              "urls": [
+                "whatsapp.com",
+                "wa.me",
+                "wa.link"
+              ]
+            },
+            "discord": {
+              "status": false,
+              "urls": [
+                "discord.com",
+                "discord.gg"
+              ]
+            },
+            "spotify": {
+              "status": false,
+              "urls": [
+                "spotify.com",
+                "spoti.fi"
+              ]
+            }
+          }
+        },
+        "antifake": false,
+        "antitoxic": false,
+        "antidelete": false,
+        "link": [],
+        "fake": [],
+        "cache": [],
+        "games": []
+      },
+      "120363047139484649@g.us": {
+        "name": "Programadores finos 💯",
+        "code": null,
+        "mute": false,
+        "notify": {
+          "add": {
+            "status": false,
+            "message": "*¤* Bienvenido a @group!\n\n_@action_\n\n*◈ Time:* @time\n\n@desc"
+          },
+          "bye": {
+            "status": false,
+            "message": "*¤* Adiós @user!\n\n_@action_\n\n*◈ Time:* @time\n\n@desc"
+          },
+          "demote": {
+            "status": false,
+            "message": "*¤* Usuario degradado @user!\n\n_@action_\n\n*◈ Time:* @time\n*◈ Rol:* miembro\n\n@desc"
+          },
+          "promote": {
+            "status": false,
+            "message": "*¤* Usuario promovido @user!\n\n_@action_\n\n*◈ Time:* @time\n*◈ Rol:* administrador\n\n@desc"
+          },
+          "modify": {
+            "status": false,
+            "message": "*¤* Grupo modificado!\n\n_@action_\n\n*◈ Time:* @time\n\n@desc"
+          },
+          "restrict": {
+            "status": false,
+            "message": "*¤* Grupo modificado!\n\n_@action_\n\n*◈ Time:* @time"
+          },
+          "announce": {
+            "status": false,
+            "message": "*¤* Grupo modificado!\n\n_@action_\n\n*◈ Time:* @time"
+          },
+          "memberAddMode": {
+            "status": false,
+            "message": "*¤* Grupo modificado!\n\n_@action_\n\n*◈ Time:* @time"
+          },
+          "joinApprovalMode": {
+            "status": false,
+            "message": "*¤* Grupo modificado!\n\n_@action_\n\n*◈ Time:* @time"
+          },
+          "desc": {
+            "status": false,
+            "message": "*¤* Grupo modificado!\n\n_@action_\n\n*◈ Time:* @time"
+          },
+          "subject": {
+            "status": false,
+            "message": "*¤* Grupo modificado!\n\n_@action_\n\n*◈ Time:* @time"
+          }
+        },
+        "antiporn": false,
+        "antionce": false,
+        "antilink": {
+          "status": false,
+          "platforms": {
+            "youtube": {
+              "status": false,
+              "urls": [
+                "youtube.com",
+                "youtu.be"
+              ]
+            },
+            "facebook": {
+              "status": false,
+              "urls": [
+                "facebook.com",
+                "fb.com",
+                "fb.me"
+              ]
+            },
+            "instagram": {
+              "status": false,
+              "urls": [
+                "instagram.com",
+                "ig.me"
+              ]
+            },
+            "tiktok": {
+              "status": false,
+              "urls": [
+                "tiktok.com",
+                "vm.tiktok.com"
+              ]
+            },
+            "twitter": {
+              "status": false,
+              "urls": [
+                "twitter.com",
+                "t.co",
+                "x.com"
+              ]
+            },
+            "reddit": {
+              "status": false,
+              "urls": [
+                "reddit.com",
+                "redd.it"
+              ]
+            },
+            "pinterest": {
+              "status": false,
+              "urls": [
+                "pinterest.com",
+                "pin.it"
+              ]
+            },
+            "snapchat": {
+              "status": false,
+              "urls": [
+                "snapchat.com",
+                "sc.snapchat.com"
+              ]
+            },
+            "telegram": {
+              "status": false,
+              "urls": [
+                "t.me",
+                "telegram.dog"
+              ]
+            },
+            "whatsapp": {
+              "status": false,
+              "urls": [
+                "whatsapp.com",
+                "wa.me",
+                "wa.link"
+              ]
+            },
+            "discord": {
+              "status": false,
+              "urls": [
+                "discord.com",
+                "discord.gg"
+              ]
+            },
+            "spotify": {
+              "status": false,
+              "urls": [
+                "spotify.com",
+                "spoti.fi"
+              ]
+            }
+          }
+        },
+        "antifake": false,
+        "antitoxic": false,
+        "antidelete": false,
+        "link": [],
+        "fake": [],
+        "cache": [],
+        "games": []
+      }
+    },
+    "settings": {
+      "573013116003@s.whatsapp.net": {
+        "name": {
+          "input": "+573013116003",
+          "international": "+57 301 3116003",
+          "national": "301 3116003",
+          "e164": "+573013116003",
+          "rfc3966": "tel:+57-301-3116003",
+          "significant": "3013116003"
+        },
+        "language": "en",
+        "private": false,
+        "dev": false,
+        "autobio": false,
+        "autorestart": false,
+        "prefix": [
+          "!",
+          "?",
+          "/",
+          ".",
+          "#"
+        ]
+      }
+    }
+  }
+}

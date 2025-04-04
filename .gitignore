@@ -1,9 +1,4 @@
-auth
-temp
 node_modules
 package-lock.json
-db.json
-.vs
-resultado.html
-t.json
-resultado.txt
+temp
+auth

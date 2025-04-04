@@ -84,14 +84,14 @@ export default new class Download {
                 const c = this._extract(data).contents.twoColumnWatchNextResults.results.results.contents
                 const v = c.find(item => item.videoPrimaryInfoRenderer).videoPrimaryInfoRenderer
                 const a = c.find(item => item.videoSecondaryInfoRenderer).videoSecondaryInfoRenderer.owner.videoOwnerRenderer
-                const result = {
+                resolve({
                     url: `https://www.youtube.com/watch?v=${id}`,
                     title: v.title.runs[0].text,
                     description: c.find(item => item.videoSecondaryInfoRenderer)?.videoSecondaryInfoRenderer?.attributedDescription?.content || "No description",
                     date: v.dateText.simpleText,
                     views: this._convert(v.viewCount.videoViewCountRenderer.viewCount.simpleText),
                     likes: this._convert(v.videoActions?.menuRenderer?.topLevelButtons?.find(btn => btn.segmentedLikeDislikeButtonViewModel?.likeButtonViewModel?.likeButtonViewModel)?.segmentedLikeDislikeButtonViewModel.likeButtonViewModel.likeButtonViewModel.toggleButtonViewModel.toggleButtonViewModel.toggledButtonViewModel.buttonViewModel.title),
-                    thumbnail: `https://i.ytimg.com/vi/${id}/hq720.jpg`,
+                    thumbnail: `https://i.ytimg.com/vi/${id}/maxresdefault.jpg`,
                     tags: v.superTitleLink?.runs.map(tag => tag.text).join(", ") || "No tags",
                     author: {
                         name: a.title.runs[0].text,
@@ -100,24 +100,6 @@ export default new class Download {
                         thumbnail: a.thumbnail.thumbnails.at(-1).url,
                         url: `https://www.youtube.com${a.navigationEndpoint.browseEndpoint.canonicalBaseUrl}`
                     }
-                }
-                resolve(result)
-            })
-        })
-    }
-
-    convert(url, quality) {
-        return new Promise(async (resolve, reject) => {
-            const id = this.getYouTubeID(url)
-            await this.client.get(`https://ytdl.vreden.web.id/convert.php/${id}/${quality}`).then(async ({ data: x }) => {
-                await this.client.get(`https://ytdl.vreden.web.id/progress.php/${x.convert}`).then(async ({ data: y }) => {
-                    if (y.status === "Error") reject({ status: false, message: "Conversion progress encountered an error" })
-                    if (y.status === "Finished") resolve({
-                        status: true,
-                        quality,
-                        url: y.url,
-                        filename: `${x.title} (${quality}${this.audio.includes(quality) ? "kbps).mp3" : "p).mp4"}`
-                    })
                 })
             })
         })
@@ -127,7 +109,7 @@ export default new class Download {
         return new Promise(async (resolve, reject) => {
             await this.getInfo(url).then(async (data) => {
                 await this.convert(url, 320).then(async ({ url, filename, quality }) => {
-                    const result = await fetch(url)
+                    const result = await fetch()
                     const buffer = Buffer.from(await result.arrayBuffer())
                     resolve({
                         url: data.url,
