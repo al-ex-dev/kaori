@@ -24,11 +24,6 @@ const start = async () => {
         auth: { creds: state.creds, keys: makeCacheableSignalKeyStore(state.keys, pino({ level: "silent" })) },
         browser: Browsers.ubuntu("Chrome"),
         printQRInTerminal: false,
-        emitOwnEvents: true,
-        generateHighQualityLinkPreview: true,
-        markOnlineOnConnect: false,
-        linkPreviewImageThumbnailWidth: 192,
-        receivedPendingNotifications: false,
         getMessage: async (msg) => {
             if (store) {
                 const m = await store.loadMessage(msg.remoteJid, msg.id);
