@@ -22,7 +22,7 @@ const start = async () => {
     const sock = _prototype({
         logger: pino({ level: "silent" }),
         auth: { creds: state.creds, keys: makeCacheableSignalKeyStore(state.keys, pino({ level: "silent" })) },
-        browser: Browsers.iOS("Safari"),
+        browser: Browsers.Ubuntu("Chrome"),
         printQRInTerminal: false,
         emitOwnEvents: true,
         generateHighQualityLinkPreview: true,
