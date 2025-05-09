@@ -2,7 +2,7 @@ import { exec } from "child_process";
 import os from "os";
 import si from "systeminformation";
 import { promisify } from "util";
-import Func from '../../../lib/_functions.js'
+import { convertTimeOut } from "@nazi-team/baileys";
 
 const execAsync = promisify(exec);
 
@@ -29,7 +29,7 @@ export default {
 *Temperatura*: ${temp.main || 'N/A'}°C
 *Memoria*: ${formatGB(mem.total)}GB Total | ${formatGB(mem.free)}GB Libre
 *Almacenamiento*: ${formatGB(disk[0]?.size || 0)}GB Total | ${formatGB(disk[0]?.used || 0)}GB Usado
-*Uptime*: ${Func.convertTimeOut(os.uptime() * 1000)}
+*Uptime*: ${convertTimeOut(os.uptime() * 1000)}
             `.trim().split('\n').map(l => l.trim()).join('\n');
 
         const { stdout } = await execAsync('pm2 jlist');
@@ -42,7 +42,7 @@ PID: ${pid}
 Status: ${pm2_env.status}
 CPU: ${monit.cpu}%
 RAM: ${formatMB(monit.memory)}MB
-Uptime: ${Func.convertTimeOut(uptime * 1000)}
+Uptime: ${convertTimeOut(uptime * 1000)}
 Node: ${pm2_env.node_version} | v${pm2_env.version}s`
         }).join('\n\n');
 

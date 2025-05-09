@@ -3,7 +3,7 @@ import Rcon from 'rcon';
 export default {
     name: 'activos',
     description: 'Lista los jugadores conectados al servidor de Minecraft',
-    comand: ['activos'],
+    comand: ['mactivos'],
     exec: async (m, { sock }) => {
         const rcon = new Rcon('localhost', 25575, 'a');
         rcon.on('auth', () => {

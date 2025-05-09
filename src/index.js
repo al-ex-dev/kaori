@@ -1,5 +1,5 @@
 import "../src/config.js"
-import { DisconnectReason, makeInMemoryStore, useMultiFileAuthState, generateWAMessageFromContent, makeCacheableSignalKeyStore, delay, Browsers, fetchLatestBaileysVersion } from "@fizzxydev/baileys-pro"
+import { DisconnectReason, makeInMemoryStore, useMultiFileAuthState, generateWAMessageFromContent, makeCacheableSignalKeyStore, delay, Browsers, fetchLatestBaileysVersion } from "@nazi-team/baileys"
 import { Boom } from '@hapi/boom'
 import pino from "pino"
 import readline from "readline"
@@ -18,15 +18,23 @@ const question = text => new Promise(resolve => rl.question(text, resolve))
 
 const start = async () => {
     const store = makeInMemoryStore({ logger: pino().child({ level: "silent", stream: "store" }) })
-    const { state, saveCreds } = await useMultiFileAuthState("./auth/session")
+    const { state, saveCreds } = await useMultiFileAuthState("./auth/session");
     const sock = _prototype({
         logger: pino({ level: "silent" }),
         auth: { creds: state.creds, keys: makeCacheableSignalKeyStore(state.keys, pino({ level: "silent" })) },
         browser: Browsers.ubuntu("Chrome"),
-        printQRInTerminal: false
+        printQRInTerminal: false,
+        getMessage: async (msg) => {
+            if (store) {
+                const m = await store.loadMessage(msg.remoteJid, msg.id);
+                return m?.message || undefined
+            }
+        },
+        keepAliveIntervalMs: 30_000,
+        syncFullHistory: false,
     })
 
-    store.bind(sock.ev)
+    store.bind(sock.ev);
     sock.ev.on("creds.update", saveCreds)
     if (!sock.authState.creds.registered) {
         console.log(`Emparejamiento con este código: ${await sock.requestPairingCode(await question("Ingresa tu número de WhatsApp activo: "), "KAORINET")}`)
@@ -241,4 +249,4 @@ const start = async () => {
 
 }
 
-start().catch(console.error)
+start()

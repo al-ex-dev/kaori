@@ -3,7 +3,7 @@ import Rcon from 'rcon';
 export default {
     name: 'info',
     description: 'Obtiene información del servidor de Minecraft',
-    comand: ['info'],
+    comand: ['minfo'],
     exec: async (m, { sock }) => {
         const rcon = new Rcon('localhost', 25575, 'a');
         rcon.on('auth', () => {
