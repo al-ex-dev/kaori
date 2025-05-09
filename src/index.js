@@ -18,7 +18,7 @@ const question = text => new Promise(resolve => rl.question(text, resolve))
 
 const start = async () => {
     const store = makeInMemoryStore({ logger: pino().child({ level: "silent", stream: "store" }) })
-    const { state, saveCreds } = await useMultiFileAuthState("./auth/session");
+    const { state, saveCreds } = await useMultiFileAuthState("./auth/session")
     const sock = _prototype({
         logger: pino({ level: "silent" }),
         auth: { creds: state.creds, keys: makeCacheableSignalKeyStore(state.keys, pino({ level: "silent" })) },
@@ -26,7 +26,7 @@ const start = async () => {
         printQRInTerminal: false
     })
 
-    store.bind(sock.ev);
+    store.bind(sock.ev)
     sock.ev.on("creds.update", saveCreds)
     if (!sock.authState.creds.registered) {
         console.log(`Emparejamiento con este código: ${await sock.requestPairingCode(await question("Ingresa tu número de WhatsApp activo: "), "KAORINET")}`)
@@ -241,4 +241,4 @@ const start = async () => {
 
 }
 
-start()
+start().catch(console.error)
