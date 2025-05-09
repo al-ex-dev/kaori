@@ -1,8 +1,9 @@
-import { convertTimeOut, generateWAMessageContent, generateWAMessageFromContent } from '@fizzxydev/baileys-pro';
+import { generateWAMessageContent, generateWAMessageFromContent } from '@fizzxydev/baileys-pro';
 import { format as formatDate } from 'date-fns'
 import { fromZonedTime } from 'date-fns-tz'
 import { filesize } from 'filesize'
 import { readFileSync } from 'fs'
+import { convertTimeOut } from '../lib/function.js'
 
 export default {
     name: 'menu',
