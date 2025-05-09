@@ -3,7 +3,7 @@ import { exec } from 'child_process';
 export default {
     name: 'status',
     description: 'Verifica el estado del servidor de Minecraft',
-    comand: ['status'],
+    comand: ['sstatus'],
     exec: async (m, { sock }) => {
         exec('systemctl status minecraft', (error, stdout, stderr) => {
             const response = error ? `❌ Error: ${stderr}` : `✅ Estado del servidor:\n${stdout}`;
