@@ -2,7 +2,7 @@ import { exec } from "child_process";
 import os from "os";
 import si from "systeminformation";
 import { promisify } from "util";
-import { convertTimeOut } from '../../lib/_function.js'
+import { convertTimeOut } from '../../lib/_functions.js'
 
 const execAsync = promisify(exec);
 

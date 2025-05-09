@@ -3,7 +3,7 @@ import { format as formatDate } from 'date-fns'
 import { fromZonedTime } from 'date-fns-tz'
 import { filesize } from 'filesize'
 import { readFileSync } from 'fs'
-import { convertTimeOut } from '../../lib/_function.js'
+import { convertTimeOut } from '../../lib/_functions.js'
 
 export default {
     name: 'menu',
