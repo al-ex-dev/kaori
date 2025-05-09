@@ -1,5 +1,5 @@
 import "../src/config.js"
-import { DisconnectReason, makeInMemoryStore, useMultiFileAuthState, generateWAMessageFromContent, makeCacheableSignalKeyStore, delay, Browsers, fetchLatestBaileysVersion } from "@nazi-team/baileys"
+import { DisconnectReason, makeInMemoryStore, useMultiFileAuthState, generateWAMessageFromContent, makeCacheableSignalKeyStore, delay, Browsers, fetchLatestBaileysVersion } from "@fizzxydev/baileys-pro"
 import { Boom } from '@hapi/boom'
 import pino from "pino"
 import readline from "readline"

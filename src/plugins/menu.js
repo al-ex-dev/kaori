@@ -1,4 +1,4 @@
-import { convertTimeOut, generateWAMessageContent, generateWAMessageFromContent } from '@nazi-team/baileys';
+import { convertTimeOut, generateWAMessageContent, generateWAMessageFromContent } from '@fizzxydev/baileys-pro';
 import { format as formatDate } from 'date-fns'
 import { fromZonedTime } from 'date-fns-tz'
 import { filesize } from 'filesize'
