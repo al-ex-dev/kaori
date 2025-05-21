@@ -1,4 +1,4 @@
-import { convertTimeOut, generateWAMessageContent, generateWAMessageFromContent } from '@nazi-team/baileys';
+import { generateWAMessageContent, generateWAMessageFromContent } from '@fizzxydev/baileys-pro';
 import { format as formatDate } from 'date-fns'
 import { fromZonedTime } from 'date-fns-tz'
 import { filesize } from 'filesize'
@@ -8,7 +8,7 @@ export default {
     name: 'menu',
     description: 'Carga el menu de comandos',
     comand: ['menu'],
-    exec: async (m, { sock, db, lang }) => {
+    exec: async (m, { sock, db, lang, Func }) => {
         const now = fromZonedTime(new Date(), db.data.users[m.sender]?.timezone)
         const hour = now.getHours()
         let greeting
@@ -116,7 +116,7 @@ Algunos comandos pueden no estar disponibles por el sistema operativo donde se h
                                     product: {
                                         productImage: await image("https://files.catbox.moe/q2wknc.png"),
                                         productId: "28628459430133161",
-                                        title: convertTimeOut(process.uptime() * 1000),
+                                        title: Func.convertTimeOut(process.uptime() * 1000),
                                         description: "created by " + _config.owner.name,
                                         currencyCode: "PEN",
                                         priceAmount1000: "500000",

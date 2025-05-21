@@ -11,7 +11,7 @@ import Scap from '../../scraper/index.js'
 
 import baileys, {
     generateWAMessageFromContent
-} from '@nazi-team/baileys'
+} from '@fizzxydev/baileys-pro'
 
 const { proto } = baileys
 

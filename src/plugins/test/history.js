@@ -1,4 +1,4 @@
-import baileys from "@nazi-team/baileys"
+import baileys from "@fizzxydev/baileys-pro"
 
 export default {
     name: 'history',
