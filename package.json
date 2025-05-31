@@ -25,7 +25,7 @@
   "homepage": "https://github.com/Alexito-Hub/ziooo-base#readme",
   "dependencies": {
     "@adiwajshing/keyed-db": "^0.2.4",
-    "@fizzxydev/baileys-pro": "git@github.com:Skidy89/Baileys",
+    "@fizzxydev/baileys-pro": "nnpm@fizzxydev/baileys-pro",
     "awesome-phonenumber": "^7.4.0",
     "axios": "^1.7.9",
     "axios-cookiejar-support": "^5.0.5",
